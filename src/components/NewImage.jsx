@@ -66,6 +66,7 @@ const NewImage = ( {image,setImage,scoreThreshold,inputSize,expressionToggle,age
     };
 
     imgRef.current && canvasRef.current && loadModels();
+    // eslint-disable-next-line
   }, [debouncedscoreThreshold, debouncedinputSize, ageToggle, genderToggle, expressionToggle]);
 
   return (
